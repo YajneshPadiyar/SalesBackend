@@ -1,0 +1,53 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\padiyary\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js start
+
+PATH: 
+  C:\ProgramData\Oracle\Java\javapath;C:\Users\padiyary\app\product\11.2.0\client_1\bin;C:\app\p_admin_PadiyarY\product\11.2.0\client_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\Enterprise Vault\EVClient\;C:\Program Files\McAfee\Solidcore\Tools\GatherInfo;C:\Program Files\McAfee\Solidcore\Tools\Scanalyzer;C:\Program Files\McAfee\Solidcore\;C:\Program Files\McAfee\Solidcore\Tools\ScGetCerts;C:\Program Files\nodejs\;C:\Program Files (x86)\PuTTY\;C:\Users\padiyary\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\padiyary\AppData\Local\Programs\Python\Python36\;C:\Users\padiyary\AppData\Local\GitHubDesktop\bin;C:\Users\padiyary\AppData\Roaming\npm;C:\Users\padiyary\AppData\Local\Programs\Git\cmd;C:\Users\padiyary\AppData\Roaming\Python\Python36\Scripts
+
+Yarn version: 
+  1.3.2
+
+Node version: 
+  8.5.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "crbackend",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+      "start": "node ./bin/www",
+      "lint": "eslint --ext .js",
+    },
+    "dependencies": {
+      "aws-sdk": "^2.155.0",
+      "body-parser": "~1.18.2",
+      "cookie-parser": "~1.4.3",
+      "debug": "~2.6.9",
+      "express": "~4.15.5",
+      "morgan": "~1.9.0",
+      "pug": "2.0.0-beta11",
+      "serve-favicon": "~2.4.5"
+    },
+    "devDependencies": {
+      "eslint": "^4.11.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: C:\Yajnesh\Learning\CRBackend\package.json: Unexpected token } in JSON at position 146
+      at JSON.parse (<anonymous>)
+      at C:\Users\padiyary\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:770:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\padiyary\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:92:30)
+      at C:\Users\padiyary\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:103:13
+      at <anonymous>
