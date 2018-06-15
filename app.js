@@ -5,6 +5,7 @@ var logger = require('morgan');
 var fs = require('fs');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var cors = require('cors');
 
 //var index = require('./routes/index');
 var users = require('./routes/users');
@@ -25,6 +26,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(cors());
 
 //app.use('/', index);
 app.use('/users', users);
@@ -39,6 +41,8 @@ app.use(function(req, res, next) {
 });
 
 app.use(function (req, res, next) {
+  //res.header("Access-Control-Allow-Origin", "*");
+  //res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   console.log('Time:', Date.now())
   next()
 })

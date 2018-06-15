@@ -12,10 +12,16 @@ router.get('/', function(req, res, next) {
 router.post('/token', function(req, res, next) {
   console.log(req);
   var loginRes = {
-    status: 'Success',
+    status: true,
     token: 'RandomToken',
-    K: req.body
   };
+  if( req.body.USER_NAME === "A"){
+
+  }else{
+    loginRes.status = false;
+  }
+
+
 
   res.send(loginRes);
 });
